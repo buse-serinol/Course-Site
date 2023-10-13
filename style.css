@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(212, 171, 121);
+    height: 100px;
+    align-items: center;
+
+}
+
+.navbar {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+nav header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+
+}
+
+nav header h1 {
+    color: rgb(147, 99, 37);
+}
+
+nav header span {
+    color: rgb(84, 27, 96);
+}
+
+nav header a {
+    font-size: 35px;
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    color: rgb(195, 126, 35);
+    font-size: 20px;
+}
+
+ul li:hover {
+    cursor: pointer;
+    color: rgb(83, 53, 31);
+}
+
+.course-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.course-content .course-sec {
+    text-align: center;
+    flex: 1;
+}
+
+h2 {
+    margin: 20px;
+    color: rgb(124, 88, 42);
+}
+
+h2 span {
+    color: rgb(185, 152, 108);
+}
+
+.button {
+    background-color: rgb(185, 152, 108);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 10px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.button:hover {
+    background-color: rgb(135, 105, 66);
+
+}
+
+.image {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    z-index: -1;
+
+}
+
+.image img {
+    width: 400px;
+}
+
+@media (max-width:800px) {
+    .course-content {
+        flex-direction: column-reverse;
+    }
+
+}
+
+
+/* info start*/
+
+.info-content {
+    background-color: rgb(110, 82, 45);
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.info-content .info-box {
+    text-align: center;
+    flex: 1;
+}
+
+.image-sec img {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    width: 400px;
+
+}
+
+.info-content .info-box h3 {
+    background-color: rgb(182, 141, 87);
+    color: white;
+    padding: 10px 20px;
+    border-top-right-radius: 50px;
+    position: absolute;
+    top: -20px;
+    width: 800px;
+}
+
+.info-content .info-box .info-button {
+    background-color: rgb(211, 118, 52);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+
+}
+
+.info-content .info-box .info-button:hover {
+    opacity: 0.5;
+}
+
+@media (max-width: 800px) {
+    .info-content {
+        flex-direction: column-reverse;
+    }
+
+}
+
+.card-container {
+    margin-top: 50px;
+    text-align: center;
+    height: 60vh;
+}
+
+.card-container h4 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: rgb(79, 51, 17);
+    border-bottom: 1px solid;
+    border-radius: 50%;
+
+}
+
+.card-container .card-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+
+}
+
+.card-container .card-content .card {
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgb(222, 129, 62);
+    border-radius: 10px;
+    
+}
+
+.card-container .card-content .card p mark {
+    background-color: rgb(143, 123, 99);
+
+}
+
+.card-container .card-content .card img {
+    background-color: bisque;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.card-container .card-content .card button {
+    margin: 20px;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.card-container .card-content .card button:hover {
+    opacity: 0.8;
+    background-color: beige;
+    
+}
+
+.card-container .card-content .card:hover{
+    transform: translateX(5px);
+    transition: .5s;
+}
+
+
+/* footer start */
+
+footer{
+  margin: 100px;
+  padding: 20px;
+  border-top: 1px solid gray;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    place-items: center;
+}
+
+.footer-container .footer-content{
+    display: flex;
+    flex-direction: column;
+    line-height: 4;
+}
+.footer-container .footer-content h5{
+    color:rgb(116, 56, 32);
+    font-size: 25px;
+    
+}
+.footer-container .footer-content a{
+    text-decoration: none;
+    color: rgb(52, 35, 22);
+    font-size: 20px;
+}
+.footer-container .footer-content a:hover{
+   color: rgb(147, 115, 59);
+   font-weight: bold;
+}
+
+footer .bottom{
+    margin: 100px;
+    text-align: center;
+    font-size: 20px;
+    border-top: 1px solid gray ;
+    padding: 20px;
+}
